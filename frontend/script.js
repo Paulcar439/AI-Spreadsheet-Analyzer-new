@@ -4,7 +4,7 @@ async function upload() {
   const formData = new FormData();
   formData.append("file", file);
 
-  const res = await fetch('https://<your-backend-url>.onrender.com/analyze', {
+  const res = await fetch('https://ai-spreadsheet-analyzer.onrender.com/analyze', {
     method: "POST",
     body: formData
   });
